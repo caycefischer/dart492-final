@@ -854,6 +854,13 @@
       border: 1px solid #818181;
       width: 300px;
    }
+   .left-img-clean {
+      position: absolute;
+      left: 8rem;
+      bottom: 20%;
+      border: 0;
+      width: 300px;
+   }
 
 
    footer {
