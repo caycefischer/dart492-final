@@ -1,0 +1,270 @@
+/**
+ * Main styles for reveal.js 
+ *
+ * @author Hakim El Hattab
+ */
+
+/*********************************************
+ * VIEW FRAGMENTS
+ *********************************************/
+
+#reveal .slides section .fragment {
+	opacity: 0;
+
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+	#reveal .slides section .fragment.visible {
+		opacity: 1;
+	}
+
+/*********************************************
+ * CONTROLS
+ *********************************************/
+
+#reveal .controls {
+	display: none;
+	position: fixed;
+	width: 100px;
+	height: 80px;
+
+	right: 0;
+	bottom: 0;
+}
+	
+	#reveal .controls a {
+		font-size: 30px;
+		position: absolute;
+		opacity: 0.2;
+		color: #0b62a4;
+	}
+		#reveal .controls a.enabled {
+			opacity: 0.8;
+			text-decoration: none;
+			color: #0b62a4;
+
+			text-shadow: 0px 0px 2px hsla(185, 45%, 70%, 0.3);
+		}
+		#reveal .controls a.enabled:hover {
+			opacity: 1;
+		}
+		#reveal .controls a.enabled:active {
+			margin-top: 1px;
+		}
+
+	#reveal .controls .left {
+		top: 30px;
+	}
+
+	#reveal .controls .right {
+		left: 60px;
+		top: 30px;
+	}
+
+	#reveal .controls .up {
+		left: 30px;
+		display: none;
+	}
+
+	#reveal .controls .down {
+		left: 30px;
+		top: 60px;
+		display: none;
+
+	}
+
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+#reveal .progress {
+	position: fixed;
+	display: none;
+	height: 3px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+
+	background: rgba(0,0,0,0.2);
+}
+	
+	#reveal .progress span {
+		display: block;
+		background: #ed8f30;
+		height: 100%;
+		width: 0px;
+
+		-webkit-transition: width 400ms linear;
+		   -moz-transition: width 400ms linear;
+		    -ms-transition: width 400ms linear;
+		     -o-transition: width 400ms linear;
+		        transition: width 400ms linear;
+	}
+
+/*********************************************
+ * SLIDES
+ *********************************************/
+
+#reveal .slides {
+	position: absolute;
+	width: 75%;
+	height: 80%;
+	top: 7%;
+   left: 12.5%;
+
+	-webkit-transition: -webkit-perspective .4s ease;
+	   -moz-transition: -moz-perspective .4s ease;
+	    -ms-transition: -ms-perspective .4s ease;
+	     -o-transition: -o-perspective .4s ease;
+	        transition: perspective .4s ease;
+	
+	-webkit-perspective: 600px;
+	   -moz-perspective: 600px;
+	    -ms-perspective: 600px;
+	        perspective: 600px;
+
+ 	-webkit-perspective-origin: 50% 25%;
+ 	   -moz-perspective-origin: 50% 25%;
+ 	    -ms-perspective-origin: 50% 25%;
+ 	        perspective-origin: 50% 25%;
+}
+
+@media all and (max-width: 1440px) {
+	#reveal .slides {
+		width: 85%;
+		left: 7.5%;
+	}
+}
+
+#reveal .slides section {
+   position: relative;
+   overflow: none;
+   padding: 0;
+}
+
+#reveal .slides>section,
+#reveal .slides>section>section {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    z-index: 10;
+	
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	    -ms-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	
+	-webkit-transition: all 400ms linear;
+	   -moz-transition: all 400ms linear;
+	    -ms-transition: all 400ms linear;
+	     -o-transition: all 400ms linear;
+	        transition: all 400ms linear;
+}
+
+#reveal .slides>section.present {
+	display: block;
+	z-index: 11;
+	opacity: 1;
+}
+
+/*********************************************
+ * LINEAR TRANSITION
+ *********************************************/
+
+#reveal.linear .slides>section.past {
+	-webkit-transform: translate(-150%, 0);
+	   -moz-transform: translate(-150%, 0);
+	    -ms-transform: translate(-150%, 0);
+	     -o-transform: translate(-150%, 0);
+	        transform: translate(-150%, 0);
+}
+#reveal.linear .slides>section.future {
+	-webkit-transform: translate(150%, 0);
+	   -moz-transform: translate(150%, 0);
+	    -ms-transform: translate(150%, 0);
+	     -o-transform: translate(150%, 0);
+	        transform: translate(150%, 0);
+}
+
+#reveal.linear .slides>section>section.past {
+	-webkit-transform: translate(0, -150%);
+	   -moz-transform: translate(0, -150%);
+	    -ms-transform: translate(0, -150%);
+	     -o-transform: translate(0, -150%);
+	        transform: translate(0, -150%);
+}
+#reveal.linear .slides>section>section.future {
+	-webkit-transform: translate(0, 150%);
+	   -moz-transform: translate(0, 150%);
+	    -ms-transform: translate(0, 150%);
+	     -o-transform: translate(0, 150%);
+	        transform: translate(0, 150%);
+}
+
+/*********************************************
+ * OVERVIEW
+ *********************************************/
+
+#reveal.overview .slides {
+	-webkit-perspective: 700px;
+	   -moz-perspective: 700px;
+	    -ms-perspective: 700px;
+	        perspective: 700px;
+}
+
+#reveal.overview .slides section {
+	padding: 20px 0;
+	opacity: 1;
+	cursor: pointer;
+	background: rgba(0,0,0,0.1);
+}
+#reveal.overview .slides section:after,
+#reveal.overview .slides section:before {
+	display: none !important;
+}
+#reveal.overview .slides section>section {
+	opacity: 1;
+	cursor: pointer;
+}
+	#reveal.overview .slides section:hover {
+		background: rgba(0,0,0,0.3);
+	}
+
+	#reveal.overview .slides section.present {
+		background: rgba(0,0,0,0.3);
+	}
+#reveal.overview .slides>section.stack {
+	background: none;
+	padding: 0;
+}
+
+
+/*********************************************
+ * FALLBACK
+ *********************************************/
+
+.no-transforms {
+	overflow-y: auto;
+}
+
+.no-transforms .slides section {
+	-webkit-transform: none;
+	   -moz-transform: none;
+	    -ms-transform: none;
+	        transform: none;
+	
+	display: block!important;
+	opacity: 1!important;
+	position: relative!important;
+}
+
+
+
+
+
+

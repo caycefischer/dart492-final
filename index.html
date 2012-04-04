@@ -1,22 +1,245 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<!--  http://html5boilerplate.com/docs/html/#ie-html-tag-classes
+      paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+   <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+   <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
     
-    <title>DART 492 Final | Zachary Kain</title>
-    <meta name="description" content="">
+    <!--  standard title and meta content tags -->
+    <title>Nano-Biotics: A Speculative Scenario</title>
+    <meta name="description" content="An investigation of the utopic and dystopic repercussions of medical nano-technology in a speculative, near-future scenario.">
     <meta name="author" content="Zachary Kain">
 
-    <meta name="viewport" content="width=device-width">
+    <!--  canonical url -->
+    <link rel="canonical" href="http://zacharykain.com/nanotech">
 
+    <!-- <meta name="viewport" content="width=device-width"> -->
+
+    <!--  stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/impress.css">
+
+    <!--  webfonts -->
+    <script type="text/javascript">
+      TypekitConfig = {
+        kitId: 'lfx5gxn',
+        scriptTimeout: 3000
+      };
+      (function() {
+        var h = document.getElementsByTagName('html')[0];
+        h.className += ' wf-loading';
+        var t = setTimeout(function() {
+          h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g, '');
+          h.className += ' wf-inactive';
+        }, TypekitConfig.scriptTimeout);
+        var tk = document.createElement('script');
+        tk.src = '//use.typekit.com/' + TypekitConfig.kitId + '.js';
+        tk.type = 'text/javascript';
+        tk.async = 'true';
+        tk.onload = tk.onreadystatechange = function() {
+          var rs = this.readyState;
+          if (rs && rs != 'complete' && rs != 'loaded') return;
+          clearTimeout(t);
+          try { Typekit.load(TypekitConfig); } catch (e) {}
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(tk, s);
+      })();
+    </script>
+    
+    <script src="js/libs/modernizr-2.5.3.min.js"></script>
+    <base target='_blank' />
 </head>
 
 <body>
-    <h1 class="beta">Medical Nano-Technology: Speculative Scenario</h1>
-    <h2 class="gamma">DART 492, Discursive Design Research 2</h2>
-    <h3 class="gamma">Zachary Kain, #9121528</h3>
-    <br></br>
-    <p class="epsilon">Hi, this is my url. The project will be up for the deadline — until then my working files won't be live.</p>
+
+    <div id="reveal">
+        <div class="slides"> <!-- Any section element inside of this container is displayed as a slide -->
+            <section>
+                <span class="callout animated bounceInDown delay-2s">Next Page!</span>
+                <h1 class="hN exa animated fadeInLeft">Nano-Biotics</h1>
+                <p class="alpha freight two-thirds animated fadeInLeft delay-1s">An investigation of the utopic and dystopic repercussions of medical nano-technology in a speculative, near-future scenario.</p>
+                <footer>
+                    <p class="freight"><strong>Zachary Kain | April 3, 2012 | DART 492, Concordia University</strong></p>
+                </footer>
+
+                <script>
+                    // Delicously hacky. Look away.
+                    if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+                    document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+                </script>
+            </section>
+
+            <section>
+                <h1 class="hN tera animated fadeInLeft">Medical Nano-Technology</h1>
+                <p class="beta two-thirds animated fadeInLeft delay-1s">The near-future emergence of nano-technology is a foregone conclusion; as research in the fields of bio-engineering and computer science grows ever-closer together, nano-technology will undoubtedly revolutionize healthcare (alongside manufacturing, warfare, environmentalism) within our lifetimes. With medical science currently engineering biological ‘machines’ on a nano-scale to fight heart disease and cancer, the leap to <a href="http://en.wikipedia.org/wiki/Revelation_space"><cite>Revelation Space</cite></a>-style ‘medbots’ is not a hard one to make.</p>
+            </section>
+
+            <section>
+                <div class="graph" id="life-expectancy"></div>
+                <header class="title-block">
+                    <p class="hN alpha animated fadeInLeft">A Canadian's</p>
+                    <p class="hN giga animated fadeInLeft">average life expectancy</p>
+                    <p class="hN alpha animated fadeInLeft delay-1s">has steadily risen through the 20th century.</p>
+                </header>
+                <div class="under">
+                    <p class="hN beta animated fadeInLeft delay-2s">This is chiefly due advances in pharmaceutical and surgical technology.</p>
+                    <p class="beta animated fadeInLeft delay-2s">Since the <a href="http://en.wikipedia.org/wiki/Human_Genome_Project#State_of_completion"><cite>human genome was sequenced in 2003</cite></a>, astonishing breakthroughs have been made in the treatment of humanity's most notorious scourges: <span class="orange">heart disease</span> and <span class="orange">cancer</span>.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="graph" id="cancer"></div>
+                <header class="title-block push-down">
+                    <p class="hN mega animated fadeInLeft">In Canada,</p>
+                    <p class="hN alpha animated fadeInLeft">the 5-year survival rate of most cancers has</p>
+                    <p class="hN alpha animated fadeInLeft delay-1s">improved <span class="giga">36.4% </span>since the mid-'70s.</p>
+                </header>
+                <div class="under thin">
+                    <p class="hN beta animated fadeInLeft delay-2s">The trend is clear, especially in light of recent breakthroughs in bio-engineered <a href="http://www.sciencedaily.com/releases/2010/07/100707211621.htm"><strong>drug delivery systems</strong></a>, which involve designing nano-particles that <a href="http://www.sciencedaily.com/releases/2012/04/120402112934.htm"><strong>target specific cancer cells</strong></a> and deliver with pinpoint accuracy antibodies, toxins or drugs. </p>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="hN tera animated bounceInDown">What would change...</h1>
+                <p class="alpha two-thirds animated fadeInLeft delay-1s">if medical nano-technology was ubiquitous? Millions of medbots could flood a person’s bloodstream - breaking up tumors or lesions, repairing damage surgery could never accomplish. Could we clear clogged arteries? Could we eliminate tumors without open surgery? Could medical nanobots help do the work of our liver and kidneys?</p>
+                <h2 class="mega two-thirds animated fadeInLeft delay-2s">Would we see an end to cancer, or the flu?</h2>
+                <p class="mega two-thirds animated fadeInLeft delay-3s">Would we live longer? How long?</p>
+            </section>
+
+            <section>
+                <div class="graph" id="elderly-pop"></div>
+                <header class="title-block push-down">
+                    <p class="hN mega animated fadeInLeft">Since 1950,</p>
+                    <p class="hN alpha animated fadeInLeft">the percentage of Canada's population <span class="mega"><b>over 65</b></span> has</p>
+                    <p class="hN tera set-right animated bounceInDown delay-1s">doubled.</p>
+                    <p class="hN alpha animated fadeInLeft delay-3s">The UN expects it to <span class="mega"><b>triple</b></span> by 2050.</p>
+                </header>
+            </section>
+
+            <section>
+                <div class="graph" id="elderly-pop2"></div>
+                <div class="title-block push-down">
+                    <p class="hN alpha animated bounceInDown">If the future promises</p>
+                    <p class="hN giga indent animated bounceInDown">radically increased lifespans</p>
+                    <p class="hN giga indent animated bounceInDown"><span class="ampersand">&amp;</span> disease prevention,</p>
+                    <p class="hN alpha animated fadeInLeft delay-2s">the UN's estimates are <span class="mega"><b>conservative</b></span> at best.</p>
+                </div>
+                <div class="meta animated bounceInDown delay-3s">
+                    <h1 class="hN gamma">2029: The Singularity</h1> 
+                    <p class="f">Ubiquitous Proliferation of Medical Nano-Technology</p>
+                    <dl class="legend">
+                        <dt class="blue">▣</dt><dd>UN projections</dd>
+                        <dt class="orange">▣</dt><dd>Adjusted projections</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section>
+                <p class="centered giga two-thirds animated fadeInLeft"><q>the first person to live to be 1,000 years old is certainly alive today</q></p>
+                <p class="mega two-thirds animated fadeInLeft attribution"><a href="http://en.wikipedia.org/wiki/Aubrey_de_Grey">Aubrey de Grey</a></p>
+            </section>
+
+            <section>
+                <header class="title-block push-down">
+                    <p class="hN tera animated bounceInDown">A nano-panacea</p>
+                    <p class="hN alpha animated fadeInLeft delay-1s">is an attractive prospect, but there is a</p>
+                    <p class="hN giga set-right animated fadeInLeft delay-1s">dark side</p>
+                    <p class="hN giga set-right animated fadeInLeft delay-2s">to that utopia...</p>
+                </header>
+            </section>
+
+            <section>
+                <header class="title-block push-down">
+                    <p class="hN giga animated fadeInLeft">Would a population that</p>
+                    <p class="hN tera set-right animated bounceInDown">unbalances towards old age</p>
+                    <p class="hN alpha set-right animated fadeInLeft delay-1s">strain the economy and skew the workforce?</p>
+                    <p class="hN push-down alpha animated fadeInLeft delay-3s">⦿ The Baby Boomers, who are just now turning 65, may not retire as expected - leaving a generation of young workers unable to find jobs.</p>
+                    <p class="hN push-down alpha animated fadeInLeft delay-3s">⦿ Existing retirees will draw from pension funds longer as lifespans increase, putting stress on an already fragile system.</p>
+                </header>
+            </section>
+        
+            <section>
+                <header class="title-block push-down">
+                    <p class="hN tera animated bounceInDown">Trans-Humanism</p>
+                    <p class="hN alpha animated fadeInLeft delay-1s two-thirds push-down">is a social movement that embraces technologies like nano-biotics, envisioning the nature of humanity's future.</p>
+                    <p class="hN giga animated fadeInLeft delay-3s push-down">therapy vs enhancement</p>
+                    <p class="hN alpha animated fadeInLeft delay-3s two-thirds">is a key question Trans-humanism tries to navigate.</p>
+                </header>
+            </section>
+
+            <section>
+                <p class="centered alpha two-thirds animated fadeInLeft"><q>Terms like 'health', 'disease', 'therapy' and 'medicine' will have to be radically redefined. Just take one example: once nanotechnology-enabled biosensing techniques are able to identify individual cancer cells inside the body, when do we say that a person is suffering from cancer? Already with one cell (everyone is carrying abnormal cells)? With 100 cells? A million? When does a person's status change from 'healthy' to 'sick'? What implications does that have for, say, the cost of their health insurance?</q></p>
+                <p class="mega two-thirds animated fadeInLeft attribution delay-1s"><a href="http://www.nanowerk.com/spotlight/spotid=5848.php">Michael Berger</a></p>
+            </section>
+        
+            <section>
+                <header class="title-block push-down">
+                    <p class="hN mega animated fadeInLeft">Paralympic world-record holder</p>
+                    <p class="hN tera animated bounceInDown">Oscar Pistorious</p>
+                    <p class="hN alpha animated fadeInLeft delay-1s">uses artificial limbs to compete in track races. He was forbidden to compete in the 2008 Summer Olympic Games, the Committee citing a &lsquo;competitive advantage&rsquo;</p>
+                </header>
+                <img src="img/pistorious.jpg" class="left-img">
+                <div class="under thin">
+                    <p class="hN beta animated fadeInLeft delay-2s">When medical nano-technology transitions into the realm of recreational or competitive spheres, how will we determine what is <strong>theraputic</strong> versus what is <strong>performance-enhancing</strong> </p>
+                </div>
+            </section>
+
+            <section>
+                <header class="title-block push-down">
+                    <p class="hN alpha animated fadeInLeft">The brave new world of nano-biotics may be a</p>
+                    <p class="hN tera set-right animated fadeInLeft">glorious utopia,</p>
+                    <p class="hN alpha set-right animated fadeInLeft">but we will face</p>
+                    <p class="hN tera push-down animated fadeInLeft delay-2s">new challenges</p>
+                    <p class="hN alpha animated fadeInLeft delay-3s">as we approach the Singularity.</p>
+                </header>
+                <footer>
+                    <p class="freight"><strong>Zachary Kain | April 3, 2012 | DART 492, Concordia University</strong></p>
+                    <p class="freight"><a href="proposal.pdf">↬ Proposal PDF</a> /// <a href="pechakucha.pptx">↬ PechaKucha</a> /// </p>
+                </footer>
+            </section>
+
+        </div>
+
+        <aside class="controls"> <!-- The navigational controls UI -->
+            <a class="left" href="#">&#x25C4;</a>
+            <a class="right" href="#">&#x25BA;</a>
+            <a class="up" href="#">&#x25B2;</a>
+            <a class="down" href="#">&#x25BC;</a>
+        </aside>
+
+        <div class="progress"><span></span></div> <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+    </div>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+    <!-- slideshow scripts -->
+    <script src="js/libs/reveal.js"></script>
+
+    <!-- chart scripts -->
+    <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+    <script src="js/libs/morris.js"></script>
+
+    <!-- my functions -->
+    <script src="js/scripts.js"></script>
+
+<!-- 
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+ -->
 </body>
 </html>
